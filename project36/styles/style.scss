@@ -1,0 +1,240 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+body {
+  position: relative;
+}
+.skinBackground {
+  position: absolute;
+  top: -10vh;
+  right: -10vh;
+  z-index: -1;
+  width: 55vw;
+  height: 110%;
+}
+.active {
+  color: #da5a1f;
+}
+
+/*****header******/
+header {
+  nav {
+    width: 100%;
+    ul {
+      width: 70%;
+      display: flex;
+      list-style: none;
+      justify-content: space-between;
+      padding: 2rem;
+      li {
+        font-size: 1.5rem;
+        font-weight: 600;
+
+        a {
+          text-decoration: none;
+          color: #a1572c;
+          transition: all 1s;
+        }
+        a:hover {
+          color: rgb(189, 161, 161);
+        }
+      }
+    }
+  }
+}
+
+/*****main******/
+main {
+  display: flex;
+  flex-wrap: wrap;
+  height: 90vh;
+  section.left {
+    flex: 3 1 500px;
+    padding: 3rem 2rem;
+    h1 {
+      font-size: 2rem;
+      font-weight: 600;
+      color: #a1572c;
+    }
+    p {
+      font-size: 1.5rem;
+      line-height: 1.5;
+      padding: 1rem 0;
+    }
+  }
+
+  section.right {
+    flex: 1 1 600px;
+    position: relative;
+    img.myPic {
+      width: 15vw;
+      height: 35vh;
+      border-radius: 20%;
+      position: absolute;
+      top: 15vw;
+      right: 20vw;
+    }
+  }
+
+  /*****sections for resume******/
+  section.table {
+    flex: 3 1 600px;
+    padding: 2rem;
+    table {
+      border-collapse: collapse;
+      tr {
+        border-bottom: 2px solid grey;
+        transition: all 0.2s ease;
+        td {
+          padding: 1rem;
+        }
+        &:hover {
+          cursor: pointer;
+          background-color: #ffd2b8;
+        }
+      }
+    }
+  }
+  section.picture {
+    flex: 1 1 250px;
+    position: relative;
+    img {
+      width: 15vw;
+      position: absolute;
+      top: 15%;
+      left: 10%;
+    }
+    div.orangeRect {
+      width: 18vw;
+      height: 60vh;
+      background-color: #e08958;
+      position: absolute;
+      top: 20%;
+      left: 15%;
+      z-index: -1;
+    }
+  }
+}
+/*****footer******/
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  width: 40%;
+  a img {
+    width: 10vw;
+  }
+}
+/*****media******/
+
+// RWD Computer device
+@media screen and (max-width: 1250px) {
+  .skinBackground {
+    opacity: 0.5;
+    width: 35vh;
+  }
+  header {
+    nav {
+      ul {
+        flex-direction: column;
+        li {
+          padding: 1rem 0;
+          border-bottom: grey 2px solid;
+        }
+      }
+    }
+  }
+
+  main {
+    section.left {
+      p {
+        font-size: 1.5rem;
+      }
+    }
+
+    section.right {
+      height: 20vh;
+      img.myPic {
+        width: 20vw;
+        height: 35vh;
+        right: 40%;
+        top: -30%;
+        margin: 2.5rem;
+      }
+    }
+  }
+
+  footer {
+    justify-content: space-around;
+    width: 90vw;
+    height: 20vh;
+    margin: 5rem -2rem;
+  }
+}
+// RWD mobile device
+@media screen and (max-width: 500px) {
+  .skinBackground {
+    width: 55vw;
+  }
+
+  div.animation {
+    display: none;
+  }
+  header {
+    nav {
+      ul {
+        li {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  main {
+    min-height: 50vh;
+    section.left {
+      h1 {
+        font-size: 2.5rem;
+      }
+      p {
+        font-size: 1.2rem;
+      }
+    }
+
+    section.right {
+      width: 20vw;
+      height: 35vh;
+      img.myPic {
+        top: -20%;
+        left: 15%;
+        width: 45vw;
+        height: 50vw;
+      }
+    }
+
+    /**** Section for resume ****/
+    section.table {
+      table {
+        tr {
+          td {
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+
+    section.picture {
+      img {
+        width: 45vw;
+        border-radius: 5%;
+        margin-left: 4rem;
+      }
+      div.orangeRect {
+        display: none;
+      }
+    }
+  }
+  /**** Section for footer ****/
+}

@@ -1,0 +1,694 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/**********
+Reset
+primary-light-0:#7bbff0;
+primary: #2980b9;
+primary-dark-0: #1a4d6f;
+primary-dark-1: #032e4d;
+primary-dark-2: #031e31;
+black: #535353;
+grey: #dedede;
+green-light-0:#55efc4;
+green: #29787c;
+**********/
+/*Utility*/
+.text-left {
+  text-align: left;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  color: #535353;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #eeeeee;
+}
+
+header div.container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 500px;
+          flex: 1 1 500px;
+}
+
+header div.container img {
+  padding: 0 0rem 0.5rem 2rem;
+}
+
+header nav {
+  -webkit-box-flex: 2;
+      -ms-flex: 2 1 700px;
+          flex: 2 1 700px;
+  padding-top: 1.5rem;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  font-size: 1.25rem;
+  color: #535353;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+header nav ul li a:hover {
+  color: #7bbff0;
+}
+
+main {
+  /*Hotel background part*/
+  /*About us part*/
+  /* Hotel showcase*/
+  /* Referenzen part*/
+  /* Corporations part*/
+  /* Contact us part*/
+}
+
+main section.background {
+  height: 60vw;
+  background: url(../img/jumbotron.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+main section.background div.greyRec {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  width: 30vw;
+  height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 1rem;
+  position: absolute;
+  top: 70%;
+  left: 10%;
+}
+
+main section.background div.greyRec h1 {
+  text-transform: capitalize;
+}
+
+main section.background div.greyRec p {
+  padding-top: 1rem;
+  font-style: italic;
+}
+
+main section.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 5rem;
+}
+
+main section.about div.aboutContainer {
+  width: 60vw;
+  min-height: 35vw;
+  position: relative;
+}
+
+main section.about div.aboutContainer h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+main section.about div.aboutContainer .blueMark {
+  width: 1.5rem;
+  height: 0.2rem;
+  background-color: #2980b9;
+  position: absolute;
+  left: 42.5%;
+}
+
+main section.about div.aboutContainer p {
+  line-height: 1.5;
+}
+
+main section.about div.aboutContainer div.button {
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+main section.about div.aboutContainer div.button a {
+  text-decoration: none;
+  color: #2980b9;
+  border: 1px solid #2980b9;
+  padding: 0.55rem 0.85rem;
+  border-radius: 3px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+main section.about div.aboutContainer div.button a:hover {
+  border: 1px solid #7bbff0;
+  color: #7bbff0;
+  -webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.5);
+}
+
+main section.about div.aboutContainer div.button:hover {
+  color: red;
+}
+
+main section.about div.aboutContainer button {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: red;
+}
+
+main section.rooms {
+  margin-top: 3rem;
+}
+
+main section.rooms div.pics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100vw;
+}
+
+main section.rooms div.pics div.imgContainer {
+  overflow: hidden;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 300px;
+          flex: 1 1 300px;
+  width: 25vw;
+  height: 15vw;
+}
+
+main section.rooms div.pics div.imgContainer img {
+  width: 100%;
+  height: 15vw;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+main section.rooms div.pics div.imgContainer img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+main section.referenzen {
+  margin: 5rem 0;
+  position: relative;
+}
+
+main section.referenzen h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+main section.referenzen div.secondBlueMark {
+  width: 1.5rem;
+  height: 0.2rem;
+  background-color: #2980b9;
+  position: absolute;
+  left: 43.5%;
+  top: 6%;
+}
+
+main section.referenzen div.cards {
+  margin-top: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main section.referenzen div.cards div.card {
+  width: 30%;
+  height: 50%;
+  border: 1px solid #dedede;
+  border-radius: 5%;
+  padding: 3rem 2rem 0rem 2rem;
+  overflow: hidden;
+}
+
+main section.referenzen div.cards div.card div.text {
+  height: 65vh;
+  position: relative;
+}
+
+main section.referenzen div.cards div.card div.text p {
+  line-height: 1.8;
+  padding-bottom: 3rem;
+}
+
+main section.referenzen div.cards div.card div.text p::before {
+  content: "\201C";
+  font-size: 3rem;
+  color: #dedede;
+  position: absolute;
+  top: -10%;
+  left: -5%;
+}
+
+main section.referenzen div.cards div.card div.text p::after {
+  content: "\201D";
+  font-size: 3rem;
+  color: #dedede;
+  position: absolute;
+  bottom: 11%;
+  right: 14%;
+}
+
+main section.referenzen div.cards div.card div.text p.girl::after {
+  position: absolute;
+  bottom: 4%;
+  left: 55%;
+}
+
+main section.referenzen div.cards div.card div.text p.man::after {
+  position: absolute;
+  right: 25%;
+  bottom: 4%;
+}
+
+main section.referenzen div.cards div.card div.info {
+  background-color: #29787c;
+  margin: 0 -2rem;
+  padding: 2.5rem 0;
+  border-radius: 5%;
+  text-align: center;
+  position: relative;
+}
+
+main section.referenzen div.cards div.card div.info img {
+  width: 4vw;
+  height: 4vw;
+  position: absolute;
+  top: -20%;
+  right: 43%;
+  background-color: white;
+  border-radius: 50%;
+  border: 3px solid #7bbff0;
+}
+
+main section.referenzen div.cards div.card div.info .name {
+  color: #ffffff;
+}
+
+main section.referenzen div.cards div.card div.info .country {
+  color: #55efc4;
+}
+
+main section.partner {
+  min-height: 30vh;
+  background-color: #1a4d6f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main section.partner div.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 70%;
+}
+
+main section.partner div.logo img {
+  -ms-flex-preferred-size: 100px;
+      flex-basis: 100px;
+}
+
+main section.contact {
+  margin: 5rem 0;
+  position: relative;
+}
+
+main section.contact h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+main section.contact div.thirdBlueMark {
+  width: 1.5rem;
+  height: 0.2rem;
+  background-color: #2980b9;
+  position: absolute;
+  left: 45.3%;
+  top: 8%;
+}
+
+main section.contact div.contactContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 3rem;
+  margin-left: 2rem;
+}
+
+main section.contact div.contactContainer div.map {
+  -webkit-box-flex: 3;
+      -ms-flex: 3 1 500px;
+          flex: 3 1 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main section.contact div.contactContainer form {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 500px;
+          flex: 1 1 500px;
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main section.contact div.contactContainer form div label,
+main section.contact div.contactContainer form div input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main section.contact div.contactContainer form div input,
+main section.contact div.contactContainer form div textarea {
+  width: 60%;
+  margin-top: 0.5rem;
+  padding: 0.5rem 0.5rem;
+}
+
+main section.contact div.contactContainer form button {
+  width: 20%;
+  color: white;
+  border: 1px solid #2980b9;
+  padding: 0.55rem 0.85rem;
+  border-radius: 3px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  background-color: #2980b9;
+  cursor: pointer;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+main section.contact div.contactContainer form button:hover {
+  border: 1px solid #91c7ee;
+  color: #8eb9d8;
+  -webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.5);
+}
+
+/*footer*/
+footer {
+  background-color: #032e4d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 40vh;
+}
+
+footer nav {
+  width: 30vw;
+  margin: 2rem 0;
+}
+
+footer nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+footer div.logo img {
+  width: 5vw;
+  border-radius: 50%;
+}
+
+footer div.darkBlue {
+  margin-top: 1.5rem;
+  background-color: #031e31;
+  height: 30vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer div.darkBlue p {
+  color: #7bbff0;
+}
+
+a.scroll {
+  position: fixed;
+  background-color: #55efc4;
+  width: 4vw;
+  height: 4vw;
+  right: 2%;
+  bottom: 5%;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+}
+
+a.scroll i {
+  color: white;
+}
+
+/*RWD*/
+@media screen and (max-width: 600px) {
+  header nav {
+    margin-bottom: 2rem;
+  }
+  header nav ul.nav-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header nav ul.nav-list li {
+    border-bottom: 2px solid #55efc4;
+    margin: 0.5rem;
+  }
+  main section.background div.greyRec {
+    top: 50%;
+    left: 50%;
+    width: 80vw;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  main section.about div.aboutContainer {
+    width: 80vw;
+  }
+  main section.about div.aboutContainer h2 {
+    text-align: center;
+    font-size: 2rem;
+  }
+  main section.about div.aboutContainer .blueMark {
+    width: 30%;
+    left: 35%;
+  }
+  main section.rooms div.pics div.imgContainer {
+    overflow: hidden;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 300px;
+            flex: 1 1 300px;
+    width: 25vw;
+    height: 45vw;
+  }
+  main section.rooms div.pics div.imgContainer img {
+    height: 45vw;
+  }
+  main section.referenzen div.secondBlueMark {
+    width: 35%;
+    top: 2%;
+    left: 32.5%;
+  }
+  main section.referenzen div.cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 10px;
+  }
+  main section.referenzen div.cards div.card {
+    width: 85vw;
+    margin: 1.5rem;
+  }
+  main section.referenzen div.cards div.card div.text {
+    height: 60vh;
+  }
+  main section.referenzen div.cards div.card div.text p.girl::after {
+    left: 70%;
+  }
+  main section.referenzen div.cards div.card div.text p.man::after {
+    right: 5%;
+  }
+  main section.referenzen div.cards div.card div.info img {
+    width: 13vw;
+    height: 13vw;
+  }
+  main section.partner {
+    min-height: 30vh;
+    background-color: #1a4d6f;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main section.partner div.logo img {
+    margin: 1rem 0;
+  }
+  main section.contact div.thirdBlueMark {
+    width: 30%;
+    top: 5%;
+    left: 35%;
+  }
+  main section.contact div.contactContainer div.map {
+    padding-right: 2rem;
+  }
+  main section.contact div.contactContainer div.map iframe {
+    width: 75vw;
+  }
+  main section.contact div.contactContainer form {
+    padding: 2rem;
+  }
+  main section.contact div.contactContainer form div input,
+  main section.contact div.contactContainer form div textarea {
+    width: 85%;
+  }
+  main section.contact div.contactContainer form button {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    width: 30%;
+  }
+  footer nav {
+    width: 80vw;
+  }
+  footer div.logo img {
+    width: 15vw;
+  }
+  footer div.darkBlue p {
+    font-size: 0.7rem;
+  }
+  a.scroll {
+    position: fixed;
+    width: 10vw;
+    height: 10vw;
+  }
+}
+/*# sourceMappingURL=style.css.map */

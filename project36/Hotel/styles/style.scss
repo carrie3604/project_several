@@ -1,0 +1,600 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/**********
+Reset
+primary-light-0:#7bbff0;
+primary: #2980b9;
+primary-dark-0: #1a4d6f;
+primary-dark-1: #032e4d;
+primary-dark-2: #031e31;
+black: #535353;
+grey: #dedede;
+green-light-0:#55efc4;
+green: #29787c;
+**********/
+/*Utility*/
+
+.text-left {
+  text-align: left;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  color: #535353;
+}
+
+header {
+  display: flex;
+  // position: sticky;
+  // top: 0;
+  flex-wrap: wrap;
+
+  background-color: #eeeeee;
+
+  div.container {
+    flex: 1 1 500px;
+    img {
+      padding: 0 0rem 0.5rem 2rem;
+    }
+  }
+  nav {
+    flex: 2 1 700px;
+    padding-top: 1.5rem;
+    ul {
+      display: flex;
+      list-style-type: none;
+      justify-content: space-around;
+      li {
+        a {
+          text-decoration: none;
+          font-size: 1.25rem;
+          color: #535353;
+          transition: all 0.3s;
+        }
+
+        a:hover {
+          color: #7bbff0;
+        }
+      }
+    }
+  }
+}
+
+main {
+  /*Hotel background part*/
+  section.background {
+    height: 60vw;
+    background: url(../img/jumbotron.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    div.greyRec {
+      background: rgba(0, 0, 0, 0.5);
+      color: white;
+      width: 30vw;
+      height: 20vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 1rem;
+      position: absolute;
+      top: 70%;
+      left: 10%;
+      h1 {
+        text-transform: capitalize;
+      }
+      p {
+        padding-top: 1rem;
+        font-style: italic;
+      }
+    }
+  }
+  /*About us part*/
+
+  section.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5rem;
+
+    div.aboutContainer {
+      width: 60vw;
+      min-height: 35vw;
+      position: relative;
+      h2 {
+        text-align: center;
+        font-size: 2rem;
+      }
+
+      .blueMark {
+        width: 1.5rem;
+        height: 0.2rem;
+        background-color: #2980b9;
+        position: absolute;
+        left: 42.5%;
+      }
+
+      p {
+        line-height: 1.5;
+      }
+
+      div.button {
+        text-align: center;
+        margin-top: 2.5rem;
+
+        a {
+          text-decoration: none;
+          color: #2980b9;
+          border: 1px solid #2980b9;
+          padding: 0.55rem 0.85rem;
+          border-radius: 3px;
+          transition: all 0.3s;
+        }
+        a:hover {
+          border: 1px solid #7bbff0;
+          color: #7bbff0;
+          box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.5);
+        }
+      }
+
+      div.button:hover {
+        color: red;
+      }
+      button {
+        align-self: center;
+        color: red;
+      }
+    }
+  }
+
+  /* Hotel showcase*/
+
+  section.rooms {
+    margin-top: 3rem;
+    div.pics {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100vw;
+      div.imgContainer {
+        overflow: hidden;
+        flex: 1 1 300px;
+        width: 25vw;
+        height: 15vw;
+
+        img {
+          width: 100%;
+          height: 15vw;
+          cursor: pointer;
+          transition: all 0.5s;
+        }
+        img:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+
+  /* Referenzen part*/
+  section.referenzen {
+    margin: 5rem 0;
+    position: relative;
+
+    h2 {
+      text-align: center;
+      font-size: 2rem;
+    }
+
+    div.secondBlueMark {
+      width: 1.5rem;
+      height: 0.2rem;
+      background-color: #2980b9;
+      position: absolute;
+      left: 43.5%;
+      top: 6%;
+    }
+    div.cards {
+      margin-top: 4rem;
+      display: flex;
+      justify-content: space-around;
+      div.card {
+        width: 30%;
+        height: 50%;
+        border: 1px solid #dedede;
+        border-radius: 5%;
+        padding: 3rem 2rem 0rem 2rem;
+        overflow: hidden;
+
+        div.text {
+          height: 65vh;
+          position: relative;
+          p {
+            line-height: 1.8;
+            padding-bottom: 3rem;
+          }
+          p::before {
+            content: "\201C";
+            font-size: 3rem;
+            color: #dedede;
+            position: absolute;
+            top: -10%;
+            left: -5%;
+          }
+          p::after {
+            content: "\201D";
+            font-size: 3rem;
+            color: #dedede;
+            position: absolute;
+            bottom: 11%;
+            right: 14%;
+          }
+
+          p.girl::after {
+            position: absolute;
+            bottom: 4%;
+            left: 55%;
+          }
+          p.man::after {
+            position: absolute;
+
+            right: 25%;
+            bottom: 4%;
+          }
+        }
+
+        div.info {
+          background-color: #29787c;
+          margin: 0 -2rem;
+          padding: 2.5rem 0;
+          border-radius: 5%;
+          text-align: center;
+          position: relative;
+          img {
+            width: 4vw;
+            height: 4vw;
+            position: absolute;
+            top: -20%;
+            right: 43%;
+
+            background-color: white;
+            border-radius: 50%;
+            border: 3px solid #7bbff0;
+          }
+          .name {
+            color: #ffffff;
+          }
+
+          .country {
+            color: #55efc4;
+          }
+        }
+      }
+    }
+  }
+  /* Corporations part*/
+  section.partner {
+    min-height: 30vh;
+    background-color: #1a4d6f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    div.logo {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      width: 70%;
+      img {
+        flex-basis: 100px;
+      }
+    }
+  }
+
+  /* Contact us part*/
+
+  section.contact {
+    margin: 5rem 0;
+    position: relative;
+
+    h2 {
+      text-align: center;
+      font-size: 2rem;
+    }
+    div.thirdBlueMark {
+      width: 1.5rem;
+      height: 0.2rem;
+      background-color: #2980b9;
+      position: absolute;
+      left: 45.3%;
+      top: 8%;
+    }
+
+    div.contactContainer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin-top: 3rem;
+      margin-left: 2rem;
+      div.map {
+        flex: 3 1 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      form {
+        flex: 1 1 500px;
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        div {
+          label,
+          input {
+            display: flex;
+            flex-direction: column;
+          }
+
+          input,
+          textarea {
+            width: 60%;
+            margin-top: 0.5rem;
+            padding: 0.5rem 0.5rem;
+          }
+        }
+
+        button {
+          width: 20%;
+          color: white;
+          border: 1px solid #2980b9;
+          padding: 0.55rem 0.85rem;
+          border-radius: 3px;
+          transition: all 0.3s;
+          background-color: #2980b9;
+          cursor: pointer;
+          align-self: center;
+        }
+        button:hover {
+          border: 1px solid #91c7ee;
+          color: #8eb9d8;
+          box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.5);
+        }
+      }
+    }
+  }
+}
+
+/*footer*/
+
+footer {
+  background-color: #032e4d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+
+  nav {
+    width: 30vw;
+    margin: 2rem 0;
+    ul {
+      display: flex;
+      list-style: none;
+      justify-content: space-between;
+      li {
+        a {
+          color: white;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  div.logo {
+    img {
+      width: 5vw;
+      border-radius: 50%;
+    }
+  }
+
+  div.darkBlue {
+    margin-top: 1.5rem;
+    background-color: #031e31;
+    height: 30vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      color: #7bbff0;
+    }
+  }
+}
+
+a.scroll {
+  position: fixed;
+  background-color: #55efc4;
+  width: 4vw;
+  height: 4vw;
+  right: 2%;
+  bottom: 5%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+
+  i {
+    color: white;
+  }
+}
+
+/*RWD*/
+
+@media screen and (max-width: 600px) {
+  header {
+    nav {
+      margin-bottom: 2rem;
+
+      ul.nav-list {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        li {
+          border-bottom: 2px solid #55efc4;
+          margin: 0.5rem;
+        }
+      }
+    }
+  }
+
+  main {
+    section.background {
+      div.greyRec {
+        top: 50%;
+        left: 50%;
+        width: 80vw;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    section.about {
+      div.aboutContainer {
+        width: 80vw;
+
+        h2 {
+          text-align: center;
+          font-size: 2rem;
+        }
+
+        .blueMark {
+          width: 30%;
+          left: 35%;
+        }
+      }
+    }
+
+    section.rooms {
+      div.pics {
+        div.imgContainer {
+          overflow: hidden;
+          flex: 1 1 300px;
+          width: 25vw;
+          height: 45vw;
+
+          img {
+            height: 45vw;
+          }
+        }
+      }
+    }
+
+    section.referenzen {
+      div.secondBlueMark {
+        width: 35%;
+        top: 2%;
+        left: 32.5%;
+      }
+      div.cards {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        div.card {
+          width: 85vw;
+          margin: 1.5rem;
+          div.text {
+            height: 60vh;
+            p.girl::after {
+              left: 70%;
+            }
+            p.man::after {
+              right: 5%;
+            }
+          }
+
+          div.info {
+            img {
+              width: 13vw;
+              height: 13vw;
+            }
+          }
+        }
+      }
+    }
+
+    section.partner {
+      min-height: 30vh;
+      background-color: #1a4d6f;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      div.logo {
+        img {
+          margin: 1rem 0;
+        }
+      }
+    }
+
+    section.contact {
+      div.thirdBlueMark {
+        width: 30%;
+        top: 5%;
+        left: 35%;
+      }
+      div.contactContainer {
+        div.map {
+          padding-right: 2rem;
+          iframe {
+            width: 75vw;
+          }
+        }
+
+        form {
+          padding: 2rem;
+          div {
+            input,
+            textarea {
+              width: 85%;
+            }
+          }
+          button {
+            align-self: flex-start;
+            width: 30%;
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    nav {
+      width: 80vw;
+    }
+    div.logo {
+      img {
+        width: 15vw;
+      }
+    }
+
+    div.darkBlue {
+      p {
+        font-size: 0.7rem;
+      }
+    }
+  }
+
+  a.scroll {
+    position: fixed;
+    width: 10vw;
+    height: 10vw;
+  }
+}
